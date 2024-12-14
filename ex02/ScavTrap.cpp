@@ -50,9 +50,9 @@ void ScavTrap::guardGate()
 
 void ScavTrap::attack(const std::string& target) 
 {
-    if(EnergyPoints <= 0 && HitPoints <= 0)
+    if(EnergyPoints <= 0 || HitPoints <= 0)
     {
-        std::cout << "ScavTrap " << Name << " no Energy and HitPoints" << std::endl;
+        std::cout << "ScavTrap " << Name << " no Energy or HitPoints" << std::endl;
         return;
     }
 

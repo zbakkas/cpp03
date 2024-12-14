@@ -1,5 +1,5 @@
 CPP	= c++
-CFLAGS	= -Wall -Wextra -Werror
+CFLAGS	= -Wall -Wextra -Werror 
 SRCS	= ClapTrap.cpp main.cpp ScavTrap.cpp FragTrap.cpp  DiamondTrap.cpp
 OBJS	= $(SRCS:.cpp=.o)
 NAME	= DiamondTrap

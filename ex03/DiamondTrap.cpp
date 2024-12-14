@@ -20,7 +20,7 @@ DiamondTrap::DiamondTrap(const DiamondTrap& diamondtrap)
 {
     std::cout << "DiamondTrap copy constructor called" << std::endl;
     Name = diamondtrap.Name;
-     HitPoints = diamondtrap.HitPoints;
+    HitPoints = diamondtrap.HitPoints;
     EnergyPoints = diamondtrap.EnergyPoints;
     AttacDdamage =  diamondtrap.AttacDdamage;
     

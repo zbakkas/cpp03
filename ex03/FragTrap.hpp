@@ -3,13 +3,13 @@
 #include "ClapTrap.hpp"
 
 
-class FragTrap: virtual public ClapTrap
+class FragTrap: virtual  public ClapTrap
 {
 private:
 
 public:
     FragTrap();
-    FragTrap::FragTrap(std::string name);
+    FragTrap(std::string name);
     FragTrap(const FragTrap& fragtrap);
     FragTrap& operator =(const FragTrap& fragtrap);
     ~FragTrap();

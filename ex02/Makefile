@@ -2,14 +2,14 @@ CPP	= c++
 CFLAGS	= -Wall -Wextra -Werror
 SRCS	= ClapTrap.cpp main.cpp ScavTrap.cpp FragTrap.cpp 
 OBJS	= $(SRCS:.cpp=.o)
-NAME	= ClapTrap
+NAME	= FragTrap
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
 	$(CPP) $(CFLAGS) $(OBJS) -o $(NAME)
 
-%.o: %.cpp ClapTrap.hpp
+%.o: %.cpp ClapTrap.hpp FragTrap.hpp
 	$(CPP) $(CFLAGS) -c $< -o $@
 
 clean:
