@@ -14,6 +14,7 @@ class ScavTrap: public ClapTrap
         ScavTrap& operator =(const ScavTrap& scavtrap);
         ~ScavTrap();
         void guardGate();
+        //Polymorphism in Inheritance
         void attack(const std::string& target);
 };
 

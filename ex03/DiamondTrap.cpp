@@ -1,18 +1,20 @@
 #include "DiamondTrap.hpp"
 
 
-DiamondTrap::DiamondTrap(): ClapTrap("_clap_name"), ScavTrap(), FragTrap()
+DiamondTrap::DiamondTrap():  ScavTrap(), FragTrap()
 {
     std::cout << "DiamondTrap constructor called" << std::endl;
-    Name = "";
+    ClapTrap::Name="_clap_name";
+    DiamondTrap::Name = "";
     EnergyPoints = 50;
     
 }
 
-DiamondTrap::DiamondTrap(std::string name): ClapTrap(name + "_clap_name"), ScavTrap(name), FragTrap(name)
+DiamondTrap::DiamondTrap(std::string name):  ScavTrap(), FragTrap()
 {
     std::cout << "DiamondTrap constructor called" << std::endl;
-    Name = name;
+    ClapTrap::Name=name+"_clap_name";
+    DiamondTrap::Name  = name;
     EnergyPoints = 50;
 }
 
@@ -23,7 +25,6 @@ DiamondTrap::DiamondTrap(const DiamondTrap& diamondtrap)
     HitPoints = diamondtrap.HitPoints;
     EnergyPoints = diamondtrap.EnergyPoints;
     AttacDdamage =  diamondtrap.AttacDdamage;
-    
 }
 
 DiamondTrap& DiamondTrap::operator =(const DiamondTrap& diamondtrap)
